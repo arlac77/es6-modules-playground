@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "rollupify": "^0.3.4",
     "systemjs": "^0.19.38",
     "traceur": "0.0.111"
   }

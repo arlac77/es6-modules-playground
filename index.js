@@ -1,7 +1,12 @@
 /* jslint node: true, esnext: true */
 'use strict';
 
+const b = require('./b');
 
+
+new b();
+
+/*
 const SystemJS = require('systemjs');
 
 SystemJS.import('./src/app.js').then(function (m) {
@@ -11,3 +16,4 @@ SystemJS.import('./src/app.js').then(function (m) {
   console.log('x ' + x);
 
 }).catch(console.error);
+*/
