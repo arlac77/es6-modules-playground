@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "systemjs": "^0.19.38",
+    "traceur": "0.0.111"
+  }
+}
