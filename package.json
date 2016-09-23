@@ -1,7 +1,7 @@
 {
   "name": "es6-modules-playground",
   "description": "playung around with ES2015 modules and rollup",
-  "version": "0.0.0",
+  "version": "0.0.0-semantic-release",
   "index": "dist/bundle.js",
   "scripts": {
     "build": "./node_modules/rollup/bin/rollup -c rollup.js src/B.js --format cjs --output dist/bundle.js",
@@ -17,10 +17,11 @@
   "homepage": "https://github.com/arlac77/es6-modules-playground#readme",
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.5"
+    "node": ">=6.6"
   },
   "devDependencies": {
     "rollup": "^0.36.0",
+    "rollup-plugin-commonjs": "^5.0.4",
     "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {

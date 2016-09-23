@@ -1,8 +1,9 @@
 /* jslint node: true, esnext: true */
 'use strict';
 
-import node_resolve from 'rollup-plugin-node-resolve';
+import nodeResolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
 
 export default {
-  plugins: [node_resolve()]
+  plugins: [nodeResolve(), commonjs()]
 };
