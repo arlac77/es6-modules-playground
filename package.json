@@ -1,11 +1,17 @@
 {
   "name": "es6-modules-playground",
+  "description": "playung around with ES2015 modules and rollup",
   "version": "0.0.0",
-  "index": "lib/bundle.js",
+  "index": "dist/bundle.js",
   "scripts": {
-    "build": "./node_modules/rollup/bin/rollup src/B.js --format cjs --output lib/bundle.js"
+    "build": "./node_modules/rollup/bin/rollup src/B.js --format cjs --output dist/bundle.js",
+    "test": "npm run build && node tests/index.js"
   },
   "devDependencies": {
-    "rollup": "^0.36.0"
+    "rollup": "^0.36.0",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  },
+  "dependencies": {
+    "model-attributes": "^2.2.1"
   }
 }
