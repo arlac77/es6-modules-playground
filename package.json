@@ -1,6 +1,6 @@
 {
   "name": "es6-modules-playground",
-  "description": "playung around with ES2015 modules and rollup",
+  "description": "playing around with ES2015 modules and rollup",
   "version": "0.0.0-semantic-release",
   "index": "dist/bundle.js",
   "scripts": {
