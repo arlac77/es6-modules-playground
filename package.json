@@ -7,6 +7,18 @@
     "build": "./node_modules/rollup/bin/rollup -c rollup.js src/B.js --format cjs --output dist/bundle.js",
     "test": "npm run build && node tests/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arlac77/es6-modules-playground.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arlac77/es6-modules-playground/issues"
+  },
+  "homepage": "https://github.com/arlac77/es6-modules-playground#readme",
+  "license": "BSD-2-Clause",
+  "engines": {
+    "node": ">=6.5"
+  },
   "devDependencies": {
     "rollup": "^0.36.0",
     "rollup-plugin-node-resolve": "^2.0.0"
