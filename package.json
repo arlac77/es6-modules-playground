@@ -4,7 +4,7 @@
   "version": "0.0.0-semantic-release",
   "index": "dist/bundle.js",
   "scripts": {
-    "build": "./node_modules/rollup/bin/rollup -c rollup.js src/B.js --format cjs --output dist/bundle.js",
+    "build": "./node_modules/rollup/bin/rollup -c rollup.config.js src/B.js --format cjs --output dist/bundle.js",
     "test": "npm run build && node tests/index.js"
   },
   "repository": {
@@ -25,7 +25,7 @@
     "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {
-    "loglevel-mixin": "^1.5.0",
+    "loglevel-mixin": "^1.6.0",
     "model-attributes": "^2.2.2",
     "statetransition-mixin": "^3.1.0"
   }
