@@ -20,7 +20,7 @@
     "node": ">=6.6"
   },
   "devDependencies": {
-    "rollup": "^0.36.2",
+    "rollup": "^0.36.3",
     "rollup-plugin-commonjs": "^5.0.4",
     "rollup-plugin-node-resolve": "^2.0.0"
   },
