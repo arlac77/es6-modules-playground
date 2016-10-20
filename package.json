@@ -17,7 +17,7 @@
   "homepage": "https://github.com/arlac77/es6-modules-playground#readme",
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.6"
+    "node": ">=6.9.1"
   },
   "devDependencies": {
     "rollup": "^0.36.3",
