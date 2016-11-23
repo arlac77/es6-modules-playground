@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "loglevel-mixin": "^1.6.3",
-    "model-attributes": "^2.2.8",
+    "model-attributes": "^2.2.9",
     "statetransition-mixin": "^3.1.4"
   },
   "main": "{{main}}",
