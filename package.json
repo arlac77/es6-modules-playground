@@ -35,7 +35,7 @@
     "semantic-release": "^6.3.2"
   },
   "dependencies": {
-    "loglevel-mixin": "^1.6.4",
+    "loglevel-mixin": "^1.6.5",
     "model-attributes": "^2.2.11",
     "statetransition-mixin": "^3.1.5"
   },
