@@ -28,9 +28,9 @@
     "mocha": "^3.2.0",
     "jsdoc-to-markdown": "^2.0.1",
     "markdown-doctest": "^0.9.1",
-    "semantic-release": "^6.3.3",
+    "semantic-release": "^6.3.5",
     "rollup": "^0.38.0",
-    "rollup-plugin-commonjs": "^6.0.0",
+    "rollup-plugin-commonjs": "^6.0.1",
     "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {
@@ -41,10 +41,12 @@
   "main": "dist/index.js",
   "module": "src/B.js",
   "keywords": [],
-  "contributors": [{
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
