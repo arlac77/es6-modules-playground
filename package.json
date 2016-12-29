@@ -30,7 +30,7 @@
     "markdown-doctest": "^0.9.1",
     "semantic-release": "^6.3.5",
     "rollup": "^0.38.1",
-    "rollup-plugin-commonjs": "^6.0.1",
+    "rollup-plugin-commonjs": "^7.0.0",
     "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {
