@@ -34,7 +34,7 @@
     "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {
-    "loglevel-mixin": "^1.6.12",
+    "loglevel-mixin": "^1.6.13",
     "model-attributes": "^3.0.1",
     "statetransition-mixin": "^3.1.10"
   },
