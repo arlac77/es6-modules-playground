@@ -38,7 +38,7 @@
   "dependencies": {
     "loglevel-mixin": "^1.6.16",
     "model-attributes": "^3.0.4",
-    "statetransition-mixin": "^3.1.15"
+    "statetransition-mixin": "^3.1.16"
   },
   "main": "dist/index.js",
   "module": "src/B.js",
