@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "loglevel-mixin": "^1.6.17",
-    "model-attributes": "^3.0.6",
+    "model-attributes": "^3.0.7",
     "statetransition-mixin": "^3.1.17"
   },
   "main": "dist/index.js",
