@@ -3,13 +3,14 @@
   "description": "playing around with ES2015 modules and rollup",
   "version": "0.0.0-semantic-release",
   "scripts": {
-    "test": "mocha tests/*_test.js",
-    "cover": "npm run prepublish && istanbul cover node_modules/.bin/_mocha -- -u exports tests/*_test.js",
+    "test": "ava",
+    "cover": "nyc ava",
     "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js >README.md",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "prepublish": "rollup --output=dist/index.js -c -- src/B.js",
-    "pretest": "npm run prepublish",
-    "posttest": "markdown-doctest"
+    "pretest": "rollup -c rollup.config.test.js",
+    "posttest": "markdown-doctest",
+    "precover": "rollup -c rollup.config.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,19 +22,21 @@
   "homepage": "https://github.com/arlac77/es6-modules-playground#readme",
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.9.3"
+    "node": ">=7.8.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "cz-conventional-changelog": "^1.2.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
+    "cz-conventional-changelog": "^2.0.0",
     "jsdoc-to-markdown": "^3.0.0",
     "markdown-doctest": "^0.9.1",
-    "semantic-release": "^6.3.5",
+    "semantic-release": "^6.3.6",
     "rollup": "^0.41.6",
     "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "ava": "^0.19.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "nyc": "^10.2.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-multi-entry": "^2.0.1"
   },
   "dependencies": {
     "loglevel-mixin": "^1.6.22",
@@ -52,6 +55,29 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "ava": {
+    "files": [
+      "build/test-bundle.js"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "build/test-bundle.js",
+      "src/**/*.js"
+    ],
+    "reporter": [
+      "lcov"
+    ],
+    "report-dir": "./coverage"
+  },
+  "template": {
+    "repository": {
+      "url": "https://github.com/arlac77/npm-package-template.git"
     }
   }
 }
