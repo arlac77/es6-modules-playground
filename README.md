@@ -13,3 +13,6 @@
 [![docs](http://inch-ci.org/github/arlac77/es6-modules-playground.svg?branch=master)](http://inch-ci.org/github/arlac77/es6-modules-playground)
 [![downloads](http://img.shields.io/npm/dm/es6-modules-playground.svg?style=flat-square)](https://npmjs.org/package/es6-modules-playground)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/arlac77/es6-modules-playground.svg)](https://greenkeeper.io/)
