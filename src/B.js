@@ -1,6 +1,3 @@
-/* jslint node: true, esnext: true */
-'use strict';
-
 import A from './A';
 import {
   getType
@@ -17,7 +14,6 @@ import {
   prepareActions
 }
 from 'statetransition-mixin';
-
 
 const actions = prepareActions({
   start: {

@@ -47,15 +47,11 @@
   },
   "main": "dist/index.js",
   "module": "src/B.js",
-  "keywords": [
-    null
-  ],
-  "contributors": [
-    {
-      "name": "Markus Felten",
-      "email": "markus.felten@gmx.de"
-    }
-  ],
+  "keywords": [],
+  "contributors": [{
+    "name": "Markus Felten",
+    "email": "markus.felten@gmx.de"
+  }],
   "ava": {
     "files": [
       "build/test-bundle.js"
@@ -72,7 +68,7 @@
     "reporter": [
       "lcov"
     ],
-    "report-dir": "./coverage"
+    "report-dir": "./build/coverage"
   },
   "template": {
     "repository": {
