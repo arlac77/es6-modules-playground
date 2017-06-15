@@ -47,7 +47,9 @@
   },
   "main": "dist/index.js",
   "module": "src/B.js",
-  "keywords": [],
+  "keywords": [
+    null
+  ],
   "contributors": [
     {
       "name": "Markus Felten",
