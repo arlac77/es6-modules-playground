@@ -48,10 +48,12 @@
   "main": "dist/index.js",
   "module": "src/B.js",
   "keywords": [],
-  "contributors": [{
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "ava": {
     "files": [
       "build/test-bundle.js"

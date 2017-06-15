@@ -1,8 +1,7 @@
-coverage
 node_modules
 build
 dist
-out
+package-lock.json
 *.log
 *.dump
 .DS_Store
