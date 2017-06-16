@@ -22,7 +22,7 @@
   "homepage": "https://github.com/arlac77/es6-modules-playground#readme",
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=8.1.1"
+    "node": ">=8.1.2"
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^3.0.0",
@@ -47,7 +47,9 @@
   },
   "main": "dist/index.js",
   "module": "src/B.js",
-  "keywords": [],
+  "keywords": [
+    null
+  ],
   "contributors": [
     {
       "name": "Markus Felten",
