@@ -1,7 +1,7 @@
+package-lock.json
 node_modules
 build
 dist
-package-lock.json
 *.log
 *.dump
 .DS_Store
