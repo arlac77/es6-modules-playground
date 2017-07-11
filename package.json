@@ -22,7 +22,7 @@
   "homepage": "https://github.com/arlac77/es6-modules-playground#readme",
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=8.1.3"
+    "node": ">=8.1.4"
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^3.0.0",
