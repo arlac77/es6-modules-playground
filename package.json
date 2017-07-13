@@ -1,17 +1,39 @@
 {
   "name": "es6-modules-playground",
-  "description": "playing around with ES2015 modules and rollup",
-  "version": "0.0.0-semantic-release",
   "scripts": {
-    "test": "ava",
     "cover": "nyc ava",
-    "docs": "jsdoc2md --configure doc/jsdoc.json -l off -t doc/README.hbs -f src/*.js >README.md",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "precover": "rollup -c tests/rollup.config.js",
+    "test": "ava",
     "pretest": "rollup -c tests/rollup.config.js",
     "posttest": "npm run prepare && markdown-doctest",
-    "precover": "rollup -c tests/rollup.config.js",
-    "prepare": "rollup -c -- src/B.js"
+    "prepare": "rollup -c -- {{module}}",
+    "docs": "jsdoc2md --configure doc/jsdoc.json -l off -t doc/README.hbs -f src/*.js >README.md",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^3.0.0",
+    "jsdoc-babel": "^0.3.0",
+    "markdown-doctest": "^0.9.1",
+    "nyc": "^11.0.3",
+    "ava": "^0.20.0",
+    "rollup": "^0.45.2",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-multi-entry": "^2.0.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "semantic-release": "^6.3.6",
+    "xo": "^0.19.0"
+  },
+  "engines": {
+    "node": ">=8.1.4"
+  },
+  "version": "0.0.0-semantic-release",
+  "description": "{{description}}",
+  "main": "dist/index.js",
+  "keywords": [
+    "npm-package-template"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arlac77/es6-modules-playground.git"
@@ -20,43 +42,23 @@
     "url": "https://github.com/arlac77/es6-modules-playground/issues"
   },
   "homepage": "https://github.com/arlac77/es6-modules-playground#readme",
-  "license": "BSD-2-Clause",
-  "engines": {
-    "node": ">=8.1.4"
-  },
-  "devDependencies": {
-    "jsdoc-to-markdown": "^3.0.0",
-    "markdown-doctest": "^0.9.1",
-    "semantic-release": "^6.3.6",
-    "rollup": "^0.45.1",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "ava": "^0.20.0",
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "nyc": "^11.0.3",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-multi-entry": "^2.0.1",
-    "jsdoc-babel": "^0.3.0",
-    "xo": "^0.19.0",
-    "babel-preset-stage-3": "^6.24.1"
-  },
-  "dependencies": {
-    "loglevel-mixin": "^1.6.22",
-    "model-attributes": "^3.0.10",
-    "statetransition-mixin": "^3.1.18"
-  },
-  "main": "dist/index.js",
-  "module": "src/B.js",
-  "keywords": [],
+  "dependencies": {},
   "contributors": [
     {
       "name": "Markus Felten",
       "email": "markus.felten@gmx.de"
     }
   ],
+  "license": "BSD-2-Clause",
+  "xo": {
+    "space": true
+  },
   "ava": {
     "files": [
       "build/test-bundle.js"
+    ],
+    "presets": [
+      "stage-3"
     ],
     "require": [
       "babel-register"
@@ -64,8 +66,7 @@
   },
   "nyc": {
     "include": [
-      "build/test-bundle.js",
-      "src/**/*.js"
+      "build/test-bundle.js"
     ],
     "reporter": [
       "lcov"
@@ -76,8 +77,5 @@
     "repository": {
       "url": "https://github.com/arlac77/npm-package-template.git"
     }
-  },
-  "xo": {
-    "space": true
   }
 }
