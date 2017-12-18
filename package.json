@@ -32,7 +32,7 @@
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-node-resolve": "^3.0.0",
     "ava": "^0.24.0",
-    "nyc": "^11.4.0",
+    "nyc": "^11.4.1",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-multi-entry": "^2.0.2",
     "jsdoc-babel": "^0.3.0",
