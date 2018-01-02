@@ -26,7 +26,7 @@
   "dependencies": {
     "loglevel-mixin": "^2.0.1",
     "model-attributes": "^3.0.10",
-    "statetransition-mixin": "^4.0.0"
+    "statetransition-mixin": "^4.0.1"
   },
   "devDependencies": {
     "markdown-doctest": "^0.9.1",
