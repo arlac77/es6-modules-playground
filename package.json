@@ -25,7 +25,7 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
-    "loglevel-mixin": "^2.0.1",
+    "loglevel-mixin": "^2.0.2",
     "model-attributes": "^3.0.10",
     "statetransition-mixin": "^4.0.2"
   },
