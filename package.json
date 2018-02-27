@@ -32,7 +32,7 @@
   "devDependencies": {
     "markdown-doctest": "^0.9.1",
     "semantic-release": "^13.1.4",
-    "rollup": "^0.56.2",
+    "rollup": "^0.56.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.3",
     "ava": "^0.25.0",
