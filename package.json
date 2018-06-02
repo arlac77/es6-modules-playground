@@ -1,6 +1,9 @@
 {
   "name": "es6-modules-playground",
   "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "module": "src/B.js",
   "description": "playing around with ES2015 modules and rollup",
