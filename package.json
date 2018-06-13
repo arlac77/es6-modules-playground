@@ -46,7 +46,7 @@
     "travis-deploy-once": "^5.0.0"
   },
   "engines": {
-    "node": ">=8.11"
+    "node": ">=10.4"
   },
   "repository": {
     "type": "git",
@@ -57,21 +57,12 @@
   },
   "homepage": "https://github.com/arlac77/es6-modules-playground#readme",
   "ava": {
-    "files": [
-      "build/test-bundle.js"
-    ],
-    "require": [
-      "babel-register"
-    ]
+    "files": ["build/test-bundle.js"],
+    "require": ["babel-register"]
   },
   "nyc": {
-    "include": [
-      "build/test-bundle.js",
-      "src/**/*.js"
-    ],
-    "reporter": [
-      "lcov"
-    ],
+    "include": ["build/test-bundle.js", "src/**/*.js"],
+    "reporter": ["lcov"],
     "report-dir": "./build/coverage"
   },
   "xo": {
