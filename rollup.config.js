@@ -1,3 +1,5 @@
+import executable from 'rollup-plugin-executable';
+import resolve from 'rollup-plugin-node-resolve';
 import pkg from './package.json';
 
 import nodeResolve from 'rollup-plugin-node-resolve';
