@@ -6,7 +6,7 @@
   },
   "sideEffects": false,
   "type": "module",
-  "main": "dist/index.js",
+  "main": "src/B.js",
   "module": "src/B.js",
   "description": "playing around with ES2015 modules and rollup",
   "keywords": [],
