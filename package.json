@@ -9,7 +9,6 @@
   "main": "src/B.js",
   "module": "src/B.js",
   "description": "playing around with ES2015 modules and rollup",
-  "keywords": [],
   "contributors": [
     {
       "name": "Markus Felten",
