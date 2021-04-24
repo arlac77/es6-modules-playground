@@ -24,9 +24,9 @@
     "test": "ava"
   },
   "dependencies": {
-    "loglevel-mixin": "^6.0.2",
-    "model-attributes": "^4.1.9",
-    "statetransition-mixin": "^4.0.2"
+    "loglevel-mixin": "^6.0.3",
+    "model-attributes": "^4.1.10",
+    "statetransition-mixin": "^6.0.13"
   },
   "devDependencies": {
     "ava": "^2.4.0",
