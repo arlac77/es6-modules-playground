@@ -1,4 +1,4 @@
-
+.github
 build
 tests
 doc
@@ -8,5 +8,4 @@ doc
 .tmp
 .travis.yml
 .vscode
-.DS_Store
 .markdown-doctest-setup.js
