@@ -16,11 +16,13 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
-    "docs": "documentation readme src/B.js --section=API",
-    "lint": "documentation lint src/B.js",
+    "test": "ava && npm run test:ava",
+    "test:ava": "ava --timeout 4m tests/*-ava.mjs tests/*-ava-node.mjs",
     "posttest": "markdown-doctest && npm run prepare",
-    "test": "ava"
+    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 4m tests/*-ava.mjs tests/*-ava-node.mjs && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
+    "docs": "documentation readme src/B.js --section=API && documentation readme --section=API ./src/**/*.mjs",
+    "lint": "documentation lint src/B.js && npm run lint:docs",
+    "lint:docs": "documentation lint ./src/**/*.mjs"
   },
   "dependencies": {
     "loglevel-mixin": "^7.1.0",
@@ -28,19 +30,19 @@
     "statetransition-mixin": "^8.0.5"
   },
   "devDependencies": {
-    "ava": "^5.0.0",
-    "c8": "^7.0.0",
-    "documentation": "^14.0.0",
+    "ava": "^6.0.1",
+    "c8": "^8.0.1",
+    "documentation": "^14.0.2",
     "esm": "^3.2.25",
     "markdown-doctest": "^1.1.0",
-    "semantic-release": "^19.0.1"
+    "semantic-release": "^22.0.12"
   },
   "engines": {
     "node": ">=14.19.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arlac77/es6-modules-playground.git"
+    "url": "https://github.com/arlac77/es6-modules-playground"
   },
   "bugs": {
     "url": "https://github.com/arlac77/es6-modules-playground/issues"
@@ -64,6 +66,7 @@
   "template": {
     "repository": {
       "url": "https://github.com/arlac77/npm-package-template-esm-only.git"
-    }
+    },
+    "inheritFrom": "arlac77/template-esm-only"
   }
 }
