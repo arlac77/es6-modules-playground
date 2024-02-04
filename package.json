@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arlac77/es6-modules-playground"
+    "url": "git+https://github.com/arlac77/es6-modules-playground.git"
   },
   "bugs": {
     "url": "https://github.com/arlac77/es6-modules-playground/issues"
