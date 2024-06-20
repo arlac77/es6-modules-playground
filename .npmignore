@@ -9,3 +9,10 @@ doc
 .travis.yml
 .vscode
 .markdown-doctest-setup.js
+.node-version
+jsconfig.json
+pkg
+vite.config.mts
+dist
+netlify.toml
+rollup.config.*
