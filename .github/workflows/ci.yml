@@ -12,7 +12,8 @@ jobs:
       pull-requests: write
       id-token: write
     steps:
-      - uses: actions/checkout@v4.1.7
+      - name: checkout
+        uses: actions/checkout@v4.1.7
       - uses: actions/setup-node@v4.0.2
         with:
           node-version: 20.15.0
