@@ -25,9 +25,9 @@
     "lint:docs": "documentation lint ./src/**/*.mjs"
   },
   "dependencies": {
-    "loglevel-mixin": "^7.2.3",
-    "model-attributes": "^4.2.2",
-    "statetransition-mixin": "^8.1.0"
+    "loglevel-mixin": "^7.2.5",
+    "model-attributes": "^4.2.4",
+    "statetransition-mixin": "^8.1.3"
   },
   "devDependencies": {
     "ava": "^6.1.3",
