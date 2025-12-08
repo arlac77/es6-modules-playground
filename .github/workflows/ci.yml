@@ -18,7 +18,6 @@ jobs:
         with:
           node-version: 20.15.0
           cache: npm
-          cache-dependency-path: package-lock.json
       - name: release
         run: npx semantic-release
         env:
