@@ -17,7 +17,6 @@ jobs:
       - uses: actions/setup-node@v4.1.0
         with:
           node-version: 20.15.0
-          cache: npm
       - name: release
         run: npx semantic-release
         env:
