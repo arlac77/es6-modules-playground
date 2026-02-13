@@ -25,7 +25,7 @@
     "lint:docs": "documentation lint ./src/**/*.mjs"
   },
   "dependencies": {
-    "loglevel-mixin": "^7.2.7",
+    "loglevel-mixin": "^7.2.8",
     "model-attributes": "^4.3.0",
     "statetransition-mixin": "^8.1.4"
   },
